@@ -13,6 +13,10 @@
 
 .list-title {
   margin-left: 14px;
+  max-width: 350px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .delete {

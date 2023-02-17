@@ -11,7 +11,7 @@ const TodoFilters = ({ onFilterChange }) => {
   };
 
   return (
-    <div>
+    <div className="filters">
       <span className="show">Show:</span>
       <button
         className={`${filter === "all" ? "button selected" : "button"}`}
