@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { useMutation, gql } from "@apollo/client";
+
+import "./index.css";
+
 const CREATE_TODO = gql`
   mutation CreateTodo($title: String!) {
     createTodo(title: $title) {
@@ -33,9 +36,12 @@ const TodoCreator = ({ onAddingTodo }) => {
   return (
     <input
       type="text"
+      autoFocus
+      placeholder="Add a new todo"
       value={value}
       onChange={(evt) => setValue(evt.target.value)}
       onKeyUp={handleKeyUp}
+      className="title-input"
     />
   );
 };

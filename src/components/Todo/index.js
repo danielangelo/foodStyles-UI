@@ -1,8 +1,10 @@
+import { useEffect } from "react";
+import { useLazyQuery, gql } from "@apollo/client";
 import TodoCreator from "./TodoCreator";
 import TodoList from "./TodoList";
 import TodoFilters from "./TodoFilters";
-import { useLazyQuery, gql } from "@apollo/client";
-import { useEffect } from "react";
+
+import "./index.css";
 
 const LIST_TODOS = gql`
   query ListTodos($filter: String) {
@@ -28,8 +30,9 @@ const Todo = () => {
   };
 
   return (
-    <div>
-      <h1>Todo List</h1>
+    <div className="container">
+      <div className="logo" />
+      <h1 className="title">Todo List</h1>
       <TodoCreator onAddingTodo={executeListTodos} />
       <TodoList data={data} onDeleteTodo={executeListTodos} />
       <TodoFilters onFilterChange={handleFilterChange} />

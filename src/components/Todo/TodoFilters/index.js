@@ -12,21 +12,21 @@ const TodoFilters = ({ onFilterChange }) => {
 
   return (
     <div>
-      <span>Show:</span>
+      <span className="show">Show:</span>
       <button
-        className={`${filter === "all" ? "selected" : ""}`}
+        className={`${filter === "all" ? "button selected" : "button"}`}
         onClick={() => handleFilterChange("all")}
       >
         All
       </button>
       <button
-        className={`${filter === "completed" ? "selected" : ""}`}
+        className={`${filter === "completed" ? "button selected" : "button"}`}
         onClick={() => handleFilterChange("completed")}
       >
         Completed
       </button>
       <button
-        className={`${filter === "incompleted" ? "selected" : ""}`}
+        className={`${filter === "incompleted" ? "button selected" : "button"}`}
         onClick={() => handleFilterChange("incompleted")}
       >
         Incompleted

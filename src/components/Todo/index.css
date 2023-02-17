@@ -1,0 +1,27 @@
+.container {
+  width: 440px;
+  height: 437px;
+  padding: 35px 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #1f2a4b;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+
+.logo {
+  background-image: url("/src/assets/logo.svg");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 32px;
+}

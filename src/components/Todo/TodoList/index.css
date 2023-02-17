@@ -1,0 +1,6 @@
+.todo-list {
+  margin-top: 26px;
+  max-height: 220px;
+  overflow-y: auto;
+  margin-bottom: 50px;
+}

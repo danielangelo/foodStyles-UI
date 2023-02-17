@@ -68,8 +68,8 @@ const TodoListItem = ({ id, title, isCompleted, onDeleteTodo }) => {
 
   return (
     <div className="todoListItem">
-      <input type="checkbox" checked={isChecked} onChange={onChange} />
-      <span>{title}</span>
+      <input className="checkbox" type="checkbox" checked={isChecked} onChange={onChange} />
+      <span className="list-title">{title}</span>
       <div className="delete" onClick={handleDeleteTodo} />
     </div>
   );

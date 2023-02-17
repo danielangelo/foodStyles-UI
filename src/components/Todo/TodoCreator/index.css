@@ -1,0 +1,19 @@
+.title-input {
+  border: none;
+  border-bottom: solid 1px #d7dae0;
+  width: 100%;
+}
+
+.title-input:focus {
+  outline: none;
+}
+
+.title-input::placeholder {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #9ea3b2;
+}

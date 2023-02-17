@@ -2,10 +2,14 @@ import { ApolloProvider } from "@apollo/client";
 import { client } from "./Apollo/client";
 import Todo from "./components/Todo";
 
+import "./App.css";
+
 const App = () => {
   return (
     <ApolloProvider client={client}>
-      <Todo />
+      <div className="app">
+        <Todo />
+      </div>
     </ApolloProvider>
   );
 };
