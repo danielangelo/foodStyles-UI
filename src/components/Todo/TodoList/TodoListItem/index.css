@@ -1,0 +1,19 @@
+.todoListItem {
+  display: flex;
+  align-items: center;
+  width: 10%;
+}
+
+.delete {
+  background-image: url("/src/assets/cross.svg");
+  background-repeat: no-repeat;
+  height: 15px;
+  width: 15px;
+  margin-left: 10px;
+  display: none;
+  cursor: pointer;
+}
+
+.todoListItem:hover > .delete {
+  display: block;
+}
